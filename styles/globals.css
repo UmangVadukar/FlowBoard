@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply dark:bg-gray-800 bg-white;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.text-primary {
+  color: #2962ff !important;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #2962ff;
+  border-color: #2962ff;
+}
+
+.btn-primary:hover {
+  background-color: #1a50db;
+  border-color: #1a50db;
+}
+
+/* Input Field Styling */
+.input-lg {
+  padding: 15px;
+  border: 2px solid #ced4da;
+  border-radius: 5px;
+}
+
+.input-lg:focus {
+  border-color: #2962ff;
+  box-shadow: 0 0 0 0.2rem rgba(41, 98, 255, 0.25);
+}
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bg-light {
+  background-color: #e8f2fd;
+}
+
+.bg-dark {
+  background-color: #343a40;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #000000;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 10px;
+}
+
+input[type="color"] {
+  margin-right: 10px;
+}
+
+input[type="range"] {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.container-fluid {
+  padding: 0;
+}
